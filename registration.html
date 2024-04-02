@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="registration.css">
+    </head>
+<body>
+    
+    <div class="container">
+        <form action="action_page.php">
+            <h1>REGISTER HERE</h1>
+      
+          <label for="fname">Username</label>
+          <input type="text" id="fname" name="firstname"  placeholder="Username">
+      
+          <label for="lname">Email     </label>
+          <input type="email" id="lname" name="lastname" placeholder="Email"><br>
+
+          <label for="lname">Password</label>
+          <input type="text" id="password" name="password" placeholder="Password">
+
+          <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label>Languages:</label>
+          <input type="checkbox" id="english" name="language[]" value="english">
+          <label for="english">English</label>
+          <input type="checkbox" id="spanish" name="language[]" value="spanish">
+          <label for="spanish">Spanish</label>
+          <br><br>
+
+          <label for="profilePic">Profile Picture:</label>
+<input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+      
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+      
+        </form>
+      </div>
+</body>
+</html>
